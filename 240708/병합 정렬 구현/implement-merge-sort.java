@@ -5,6 +5,7 @@ import java.util.*;
 public class Main {
 
     static int[] arr;
+    static int[] sorted_arr;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -12,6 +13,7 @@ public class Main {
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         arr = new int[n];
+        sorted_arr = new int[n];
         for(int i = 0; i<n; i++){
             arr[i] = Integer.parseInt(st.nextToken());
         }
@@ -39,8 +41,6 @@ public class Main {
         int j = mid+1; //오른쪽 시작점
         int k = low;
 
-        int[] sorted_arr = new int[arr.length];
-        
         while(i <= mid && j <= high){
             if(arr[i] <= arr[j]){
                 sorted_arr[k] = arr[i];
