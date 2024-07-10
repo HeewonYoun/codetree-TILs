@@ -28,7 +28,7 @@ public class Main {
                     System.out.println(s.pop());
                     break;
                 case "top":
-                    System.out.println(s.top());
+                    System.out.println(s.peek());
                     break;
             }
         }        
