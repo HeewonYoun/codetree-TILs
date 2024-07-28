@@ -45,8 +45,10 @@ public class Main {
                 
                 if(nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
                 if(visited[nx][ny]) continue;
-
-                q.offer(new int[]{nx, ny});
+                
+                if(map[nx][ny] == 1){
+                    q.offer(new int[]{nx, ny});
+                }
             }
         }
 
