@@ -47,6 +47,7 @@ public class Main {
                 if(visited[nx][ny]) continue;
                 
                 if(map[nx][ny] == 1){
+                    visited[nx][ny] = true;
                     q.offer(new int[]{nx, ny});
                 }
             }
