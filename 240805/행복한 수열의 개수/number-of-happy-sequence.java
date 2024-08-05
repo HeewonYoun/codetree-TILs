@@ -37,6 +37,7 @@ public class Main {
                     
                 }else {
                     tmp = map[i][k];
+                    count = 1;
                 }
             }
 
@@ -58,6 +59,7 @@ public class Main {
                     
                 } else {
                     tmp = map[k][i];
+                    count = 1;
                 }
             }
         }
