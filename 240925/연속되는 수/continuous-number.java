@@ -41,6 +41,8 @@ public class Main {
                     count = 1;
                 }
             }
+
+            max = Math.max(count, max);
         }
 
         System.out.println(max);
