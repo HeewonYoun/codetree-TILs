@@ -34,10 +34,11 @@ public class Main {
                 }
                 if(list[i] == isContinue){
                     count++;
-                    // System.out.println(list[i]+" +1");
+                    // System.out.println(list[i]+" +1, count: " + count);
                 } else {
                     max = Math.max(count, max);
                     isContinue = list[i];
+                    count = 1;
                 }
             }
         }
