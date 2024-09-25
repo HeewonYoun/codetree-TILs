@@ -25,9 +25,9 @@ public class Main {
         while(iter.hasNext()){
             int check = iter.next();
             int isContinue = list[0];
-            int count = 0;
+            int count = 1;
 
-            for(int i = 0; i<N; i++){
+            for(int i = 1; i<N; i++){
                 if(list[i] == check){
                     // System.out.println(list[i]+" "+check);
                     continue;
